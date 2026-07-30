@@ -1,19 +1,19 @@
 {
-  "name": "playwright",
+  "name": "vaatz-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "step1": "tsx src/playwright-step1.ts",
+    "step2": "tsx src/playwright-step2.ts",
+    "start": "tsx src/playwright-step1.ts",
+    "check": "tsc --noEmit"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "playwright": "^1.61.1"
+    "playwright": "^1.46.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.61.1"
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.4"
   }
 }
